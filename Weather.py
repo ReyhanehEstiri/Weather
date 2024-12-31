@@ -31,7 +31,7 @@ def print_weather_data(city_name, data):
 def main():
     api_key = "a233d4ff15b20ac7fab0ffae4f8448ba"
     city_name = input("Enter city name: ").strip()
-
+    print("Fetching data...")
     if city_name:
         weather_data = get_weather_data(city_name, api_key)
         print_weather_data(city_name, weather_data)
